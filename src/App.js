@@ -1,11 +1,16 @@
+import { Outlet, Routes } from "react-router-dom";
 import "./App.css";
 import Game from "./components/Game";
 
 function App() {
   return (
-    <div className="App">
-      <Game />
-    </div>
+    <>
+      <Routes>
+        <p>Header</p>
+        <Outlet />
+        <p>Footer</p>
+      </Routes>
+    </>
   );
 }
 
